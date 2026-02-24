@@ -1,4 +1,3 @@
-/* Genel Ayarlar */
 * {
   font-family: "JetBrainsMono Nerd Font";
   border: none;
@@ -7,12 +6,10 @@
   font-size: 14px;
 }
 
-/* Waybar Ana Penceresi */
 window#waybar {
   background-color: transparent;
 }
 
-/* Tüm Modüller (İstediğiniz Renk Atandı) */
 #clock,
 #pulseaudio,
 #custom-media,
@@ -24,7 +21,7 @@ window#waybar {
 #custom-logout,
 #custom-restart,
 #custom-power_btn {
-background-color: #54487A; /* Talebiniz üzerine güncellendi */
+background-color: #54487A;
 color: #cdd6f4;
 border-radius: 50px;
 padding: 2px 14px;
@@ -32,7 +29,6 @@ margin: 4px 6px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Çalışma Alanları (Workspaces) */
 #workspaces {
 padding: 0px 4px;
 }
@@ -56,7 +52,6 @@ min-width: 35px;
 background: rgba(203, 166, 247, 0.5);
 }
 
-/* Tray Modülü Spesifik Ayarlar */
 #tray {
 padding: 0 10px;
 }
@@ -67,12 +62,11 @@ padding: 0 10px;
 margin: 0 4px;
 }
 
-/* Tıklanabilir Öğeler Hover */
 #clock:hover,
 #pulseaudio:hover,
 #network:hover,
 #bluetooth:hover,
 #custom-logout:hover,
 #custom-power_btn:hover {
-background-color: #6a5c96; /* Hover durumunda biraz daha açık renk */
+background-color: #6a5c96;
 }

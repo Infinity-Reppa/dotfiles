@@ -45,21 +45,20 @@ right_format = """
 palette = 'gentoo_purple'
 
 [palettes.gentoo_purple]
-# -- Ana Renkler (Mor Gradyan) --
-lavender = "#d6acff"  # En açık lila (Kullanıcı adı)
-peach    = "#bd93f9"  # Açık Lavanta (Dizin)
-green    = "#a020f0"  # Canlı Mor (Git)
-yellow   = "#7a6eb3"  # Orta Mor (Diller)
-sapphire = "#54487A"  # Koyu Gentoo Moru (Docker)
 
-# -- Yardımcı Renkler --
-surface0 = "#332b4a"  # Koyu grimsi mor (Çerçeve/Oklar)
-base     = "#000000"  # Tam siyah
+lavender = "#d6acff"
+peach    = "#bd93f9"
+green    = "#a020f0"
+yellow   = "#7a6eb3"
+sapphire = "#54487A"
+
+
+surface0 = "#332b4a"
+base     = "#000000"
 mantle   = "#181825"
-crust    = "#000000"  # Yazıların okunması için siyah (Git branch text)
+crust    = "#000000"
 
-# -- Diğerleri --
-red      = "#ff5555"  # Hata rengi (Kırmızımsı)
+red      = "#ff5555"
 text     = "#ffffff"
 subtext1 = "#bac2de"
 subtext0 = "#a6adc8"

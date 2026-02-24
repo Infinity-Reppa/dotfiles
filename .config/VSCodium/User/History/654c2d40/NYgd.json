@@ -1,8 +1,0 @@
-{
-    "workbench.colorTheme": "Void",
-    "workbench.iconTheme": "catppuccin-mocha",
-    "catppuccin.accentColor": "lavender",
-    "workbench.layoutControl.enabled": false,
-    "window.menuBarVisibility": "never",
-    "window.commandCenter": false
-}

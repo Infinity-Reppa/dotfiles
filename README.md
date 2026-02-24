@@ -27,3 +27,6 @@ Mpvpaper: Video wallpaper program.
 LibreWolf and Ungoogled Chromium: Privacy-hardened and system-theme compatible.  
 Pipes.sh / Cava / Cmatrix / Cbonsai / Ponysay: Terminal visualizers for aesthetic consistency.  
 Fastfetch: System information display.
+
+## Credits
+This configuration is a "Frankenstein" build, incorporating various snippets and ideas from the amazing r/unixporn and Hyprland communities. While I cannot recall every specific source, I am deeply grateful to the developers and users whose dotfiles inspired this setup.
