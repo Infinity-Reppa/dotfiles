@@ -1,0 +1,3 @@
+function bruh2 --wraps='sudo dispatch-conf && sudo rm -rf /var/tmp/portage/* && sudo emerge -ac && sudo eclean-dist -d && sudo eclean packages && sudo grub-mkconfig -o /boot/grub/grub.cfg' --wraps='sudo dispatch-conf && sudo emerge -ac && sudo eclean-dist -d && sudo eclean packages && sudo grub-mkconfig -o /boot/grub/grub.cfg && sudo rm -rf /var/tmp/portage/*' --description 'alias bruh2=sudo dispatch-conf && sudo emerge -ac && sudo eclean-dist -d && sudo eclean packages && sudo grub-mkconfig -o /boot/grub/grub.cfg && sudo rm -rf /var/tmp/portage/*'
+    sudo dispatch-conf && sudo emerge -ac && sudo eclean-dist -d && sudo eclean packages && sudo grub-mkconfig -o /boot/grub/grub.cfg && sudo rm -rf /var/tmp/portage/* $argv
+end

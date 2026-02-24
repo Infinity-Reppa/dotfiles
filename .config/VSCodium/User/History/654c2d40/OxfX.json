@@ -1,0 +1,70 @@
+{
+  "workbench.colorCustomizations": {
+    "window.activeBorder": "#54487A",
+    "window.inactiveBorder": "#444444",
+    
+    "editor.background": "#1a1a1a",
+    "editor.foreground": "#f8f8f2",
+    "editorCursor.foreground": "#b266ff",
+    "editorLineNumber.foreground": "#444444",
+    "editorLineNumber.activeForeground": "#d1b1fc",
+    "editor.selectionBackground": "#44444480",
+    
+    "sideBar.background": "#1a1a1a",
+    "sideBar.foreground": "#f8f8f2",
+    "sideBar.border": "#444444",
+    
+    "activityBar.background": "#1a1a1a",
+    "activityBar.foreground": "#d1b1fc",
+    "activityBar.inactiveForeground": "#444444",
+    "activityBar.activeBorder": "#54487A",
+    "activityBarBadge.background": "#54487A",
+    "activityBarBadge.foreground": "#ffffff",
+    
+    "titleBar.activeBackground": "#1a1a1a",
+    "titleBar.activeForeground": "#f8f8f2",
+    "titleBar.inactiveBackground": "#1a1a1a",
+    
+    "statusBar.background": "#54487A",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.noFolderBackground": "#1a1a1a",
+    
+    "tab.activeBackground": "#54487A",
+    "tab.activeForeground": "#ffffff",
+    "tab.inactiveBackground": "#1a1a1a",
+    "tab.inactiveForeground": "#7a6eb3",
+    "tab.border": "#444444",
+
+    "terminal.background": "#1a1a1a",
+    "terminal.foreground": "#f8f8f2",
+    "terminal.ansiBlack": "#1a1a1a",
+    "terminal.ansiBrightBlack": "#444444",
+    "terminal.ansiRed": "#ff5555",
+    "terminal.ansiBrightRed": "#ff6e67",
+    "terminal.ansiGreen": "#a020f0",
+    "terminal.ansiBrightGreen": "#b266ff",
+    "terminal.ansiYellow": "#bd93f9",
+    "terminal.ansiBrightYellow": "#d6acff",
+    "terminal.ansiBlue": "#54487A",
+    "terminal.ansiBrightBlue": "#7a6eb3",
+    "terminal.ansiMagenta": "#54487A",
+    "terminal.ansiBrightMagenta": "#7a6eb3",
+    "terminal.ansiCyan": "#d1b1fc",
+    "terminal.ansiBrightCyan": "#e2d1fc",
+    "terminal.ansiWhite": "#f8f8f2",
+    "terminal.ansiBrightWhite": "#ffffff",
+
+    "[Default Dark+]": {
+      "editor.background": "#1a1a1a"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#444444",
+    "keywords": "#a020f0",
+    "variables": "#f8f8f2",
+    "strings": "#bd93f9",
+    "functions": "#b266ff",
+    "numbers": "#ff6e67",
+    "types": "#d1b1fc"
+  }
+}
