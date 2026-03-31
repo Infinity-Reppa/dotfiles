@@ -1,0 +1,78 @@
+/* Genel Ayarlar */
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  border: none;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Waybar Ana Penceresi */
+window#waybar {
+  background-color: transparent;
+}
+
+/* Tüm Modüller (İstediğiniz Renk Atandı) */
+#clock,
+#pulseaudio,
+#custom-media,
+#network,
+#bluetooth,
+#tray,
+#workspaces,
+#window,
+#custom-logout,
+#custom-restart,
+#custom-power_btn {
+background-color: #54487A; /* Talebiniz üzerine güncellendi */
+color: #cdd6f4;
+border-radius: 50px;
+padding: 2px 14px;
+margin: 4px 6px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Çalışma Alanları (Workspaces) */
+#workspaces {
+padding: 0px 4px;
+}
+
+#workspaces button {
+padding: 0px 8px;
+margin: 3px 2px;
+border-radius: 50px;
+color: #cdd6f4;
+background-color: rgba(255, 255, 255, 0.1);
+transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+color: #11111b;
+background: #cba6f7;
+min-width: 35px;
+}
+
+#workspaces button:hover {
+background: rgba(203, 166, 247, 0.5);
+}
+
+/* Tray Modülü Spesifik Ayarlar */
+#tray {
+padding: 0 10px;
+}
+
+#tray > .passive,
+#tray > .active,
+#tray > .needs-attention {
+margin: 0 4px;
+}
+
+/* Tıklanabilir Öğeler Hover */
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#custom-logout:hover,
+#custom-power_btn:hover {
+background-color: #6a5c96; /* Hover durumunda biraz daha açık renk */
+}

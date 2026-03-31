@@ -1,0 +1,282 @@
+format = """
+[╭─](surface0)\
+$os\
+[ ](bg:lavender fg:surface0)\
+$username\
+$hostname\
+[](bg:peach fg:lavender)\
+[  ](bg:peach fg:surface0)\
+$directory\
+[ ](bg:peach)\
+[](bg:green fg:peach)\
+$git_branch\
+$git_status\
+$git_commit\
+$git_metrics\
+[](fg:green bg:yellow)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:yellow bg:sapphire)\
+$docker_context\
+$conda\
+[](fg:sapphire)\
+$fill\
+[](fg:lavender bg:gentoo_purple)\
+$cmd_duration\
+[](bg:lavender fg:surface0)\
+$time\
+$battery\
+[─╮](fg:surface0)\
+$line_break\
+[╰─](surface0)\
+$character\
+"""
+
+right_format = """
+[─╯](surface0)\
+"""
+palette = 'gentoo_purple'
+
+[palettes.gentoo_purple]
+# -- Ana Renkler (Mor Gradyan) --
+lavender = "#d6acff"  # En açık lila (Kullanıcı adı)
+peach    = "#bd93f9"  # Açık Lavanta (Dizin)
+green    = "#a020f0"  # Canlı Mor (Git)
+yellow   = "#7a6eb3"  # Orta Mor (Diller)
+sapphire = "#54487A"  # Koyu Gentoo Moru (Docker)
+
+# -- Yardımcı Renkler --
+surface0 = "#332b4a"  # Koyu grimsi mor (Çerçeve/Oklar)
+base     = "#000000"  # Tam siyah
+mantle   = "#181825"
+crust    = "#000000"  # Yazıların okunması için siyah (Git branch text)
+
+# -- Diğerleri --
+red      = "#ff5555"  # Hata rengi (Kırmızımsı)
+text     = "#ffffff"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink     = "#f5c2e7"
+mauve    = "#cba6f7"
+maroon   = "#eba0ac"
+teal     = "#94e2d5"
+sky      = "#89dceb"
+blue     = "#89b4fa"
+
+[os]
+format = "[ $symbol]($style)()"
+style = "bg:surface0 fg:lavender"
+disabled = false
+
+[os.symbols]
+AIX = "AIX "
+Alpaquita = "\uf26a " # \uf26a  # \ue3a5\ue390 
+AlmaLinux = "\uf31d " # 
+Alpine = "\uf300 " # ""
+Amazon = "\uf270 " # ""
+Android = "\ue70e " # ""
+Arch = "\uf303 " # ""
+Artix = "\uf31f " # 
+CentOS = "\uf304 " # ""
+Debian = "\uf306 " # ""
+DragonFly = "\ueef8 " #    🐉
+Emscripten = "\u26A1 " # ⚡
+EndeavourOS = "\uf322 " # "" # 
+Fedora = "\uf30a " # ""
+FreeBSD = "\uf30c " # ""
+Garuda = "\uf337 " # ""
+Gentoo = "\uf30d " # ""
+HardenedBSD = "\uf132 " # 
+Illumos = "\uf326 " # "🐦"
+Kali = "\uf327 " # 
+Linux = "\uf17c " # ""
+Mabox = "\uf1b2 " #  📦
+Macos = "\uf302 " # ""
+Manjaro = "\uf312 " # ""
+Mariner = "\ue7ae " # \ue7ae 
+MidnightBSD = "\ue3e0 " # 🌘
+Mint = "\uf30e " # ""
+NetBSD = "\u2691 " # ⚑
+NixOS = "\uf313 " # ""
+OpenBSD = "\uf328 " # ""
+OpenCloudOS = "\uf0c2 " # 
+openEuler = "\u2208 " # \u2208 ∈
+openSUSE = "\uf314 " # ""
+OracleLinux = "\u213A " # \u213A ℺ # ⊂⊃ \u2282\u2283
+Pop = "\uf32a " # ""
+Raspbian = "\uf315 " # ""
+Redhat = "\uf316 " # "" # 󱄛
+RedHatEnterprise = "\uf316 " # "" # 󱄛
+RockyLinux = "\uf32b " # 
+Redox = "\uf331 " #   󰺕
+Solus = "\uf32d " # "" # " "
+SUSE = "\uef6d " # ""
+Ubuntu = "\uf31b " # ""
+Ultramarine = "󱙳 " # 🔷
+Unknown = "\uf108 " # ""
+Void = "\uf32e " #  
+Windows = "\uf17a " # ""
+
+[username]
+show_always = true
+style_user = "bg:lavender fg:surface0"
+style_root = "bg:lavender fg:surface0 bold"
+format = '[$user]($style)'
+
+[hostname]
+format = '[@$hostname ](bg:lavender fg:surface0)'
+ssh_only = false
+# ssh_symbol = "@" # \ue36e '' # '⇒' # ' ' # 'ﬁ⇒'
+# trim_at = '.companyname.com'
+disabled = false
+
+[fill]
+symbol = ' '
+style = 'bold subtext1'
+
+[directory]
+style = "bg:peach fg:surface0"
+format = '[$path]($style)[$read_only]($read_only_style)'
+truncation_length = 3
+truncation_symbol = "~/"
+read_only = ' 🔒'
+read_only_style = 'bg:peach'
+
+[git_branch]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol $branch ](fg:crust bg:green)]($style)'
+
+[git_commit]
+format = '[\($hash$tag\)]($style)[ ]()'
+style = 'bg:green'
+commit_hash_length = 8
+tag_symbol = " \uf412 " # \uf412 '  ' # '  ''
+tag_disabled = false
+disabled = false
+
+[git_metrics]
+format = '[\[+$added/]($added_style)[-$deleted\]]($deleted_style)[ ](bg:green)'
+added_style = 'bg:green fg:crust'
+deleted_style = 'bg:green fg:crust'
+disabled = false
+
+[git_status]
+style = "bg:green"
+format = '[[($all_status$ahead_behind )](fg:crust bg:green)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[c]
+symbol = " "
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[php]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[java]
+symbol = " "
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol( $version) ](fg:crust bg:yellow)]($style)'
+
+[python]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:yellow)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:sapphire"
+detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
+only_with_files = true
+format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
+disabled = false
+
+[conda]
+symbol = "  "
+style = "fg:crust bg:sapphire"
+format = '[$symbol$environment ]($style)'
+ignore_base = false
+
+[status]
+format = "[$symbol $status $hex_status( \uf0a2 $signal_number-$signal_name)]($style)" # \uf0a2  , \ueaa2
+#format = "[$symbol $status ]($style)" # \uf0a2  , \ueaa2
+style = 'bg:red fg:surface0'
+success_symbol = '' # '✔'
+symbol = " \u2717" # \u2717 \uf467 \uebde  ✘
+disabled = false
+map_symbol = false
+
+[time]
+format = "[ $time ]($style)"
+style = 'bg:surface0 fg:lavender'
+disabled = true # set to 'false', if you want to see the time
+
+[cmd_duration]
+show_milliseconds = true
+format = "[ took [$duration ](bold fg:surface0 bg:lavender)](fg:surface0 bg:lavender)"
+disabled = false
+show_notifications = false
+min_time_to_notify = 45000
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:green)'
+error_symbol = '[✘](bold fg:red)'
+vimcmd_symbol = '[❮](bold fg:green)'
+vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
+vimcmd_replace_symbol = '[❮](bold fg:lavender)'
+vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+[battery]
+format = "[ \ueab5 $symbol$percentage]($style)"
+full_symbol = '󰁹 '
+charging_symbol = '󰂄 '
+discharging_symbol = '󰂃 '
+unknown_symbol = '󰁽? '
+empty_symbol = '󰂎 '
+disabled = true # set to 'false', if you want to see the battery status
+
+[[battery.display]]
+threshold = 100 # show always
+style = 'fg:lavender bg:surface0'
