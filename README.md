@@ -1,6 +1,6 @@
 **Gentoo Midnight Purple Dotfiles**
 
-A minimalist Gentoo Linux environment with a focus on AMOLED Black (#000000) and Gentoo Purple (#54487A) aesthetics, utilizing the Hyprland compositor. This is my first rice (and also first Github contribution) ever so I appreciate constructive feedback!
+A minimalist Gentoo Linux environment with a focus on AMOLED Black (#000000) and Gentoo Purple (#54487A) aesthetics, utilizing the Hyprland compositor. This build is the result of combining various configurations I found online with my own customizations.
 
 **Showcase**
 https://github.com/user-attachments/assets/c01a08b9-53fc-43cc-8beb-f043bfefa6df
@@ -29,6 +29,3 @@ https://github.com/user-attachments/assets/c01a08b9-53fc-43cc-8beb-f043bfefa6df
 - LibreWolf and Ungoogled Chromium: Privacy-hardened and system-theme compatible.  
 - Pipes.sh / Cava / Cmatrix / Cbonsai / Ponysay: Terminal visualizers for aesthetic consistency.  
 - Fastfetch: System information display.
-
-## Credits
-This configuration is a "Frankenstein" build, incorporating various snippets and ideas from the amazing r/unixporn and Hyprland communities. While I cannot recall every specific source, I am deeply grateful to the developers and users whose dotfiles inspired this setup.
